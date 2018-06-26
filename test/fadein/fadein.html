@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>AOS - Animate on scroll library</title>
+		<meta name="description" content="AOS - Animate On Scroll library using CSS3">
+		<meta name="keywords" content="AOS, animate on scroll, css3 scroll animations, simple scroll animations">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+		<!-- <link rel="stylesheet" href="http://localhost:3002/dist/aos.css" /> -->
+		<link rel="stylesheet" href="styles.css" />
+
+	</head>
+	<body>
+<div>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+            Why do we use it?
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+</div>
+		<section class="section section--code">
+			<div class="container">
+				<h2 class="section-title">Different settings examples</h2>
+				<div class="code code--right" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+					<pre><code>&lt;div data-aos="fade-down"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-easing="linear"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-duration="1500">&#13;&lt;/div></code></pre>
+				</div>
+				<div id="example-anchor" class="code code--left" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+					<pre><code>&lt;div data-aos="fade-right"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-offset="300"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-easing="ease-in-sine">&#13;&lt;/div></code></pre>
+				</div>
+				<div class="code code--right" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+					<pre><code>&lt;div data-aos="fade-left"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-anchor="#example-anchor"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-offset="500"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-duration="500">&#13;&lt;/div></code></pre>
+				</div>
+				<div class="code code--left" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+					<pre><code>&lt;div data-aos="fade-zoom-in"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-easing="ease-in-back"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-delay="300"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-offset="0">&#13;&lt;/div></code></pre>
+				</div>
+				<div class="code code--right" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+					<pre><code>&lt;div data-aos="flip-left"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-easing="ease-out-cubic"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-duration="2000">&#13;&lt;/div></code></pre>
+				</div>
+				<div class="code code--left" data-aos="fade-up" data-aos-duration="3000">
+					<pre><code>&lt;div data-aos="fade-up"&#13;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-aos-duration="3000">&#13;&lt;/div></code></pre>
+				</div>
+			</div>
+		</section>
+
+
+
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="highlight.js"></script>
+
+		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+		<!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
+
+		<script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+		</script>
+
+		<script>
+			hljs.initHighlightingOnLoad();
+
+			$('.hero__scroll').on('click', function(e) {
+				$('html, body').animate({
+					scrollTop: $(window).height()
+				}, 1200);
+			});
+		</script>
+	</body>
+</html>

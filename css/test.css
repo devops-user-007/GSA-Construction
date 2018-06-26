@@ -1,0 +1,569 @@
+/* To Remove */
+footer {
+	border: 2px green solid;
+}
+/* End To Remove */
+
+body {
+    font-family: 'Tangerine', serif;
+}
+
+/* Navigation */
+
+#header-container {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 20px;
+    background-color: yellow;
+	 z-index: 9999999;
+	 position: relative;
+}
+
+
+#nav-container {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style-type: none;
+    font-size: 14px;
+    font-family: Calibri;
+    font-weight: bold;
+    z-index: 9999999;
+    position: fixed;
+    /*
+    margin-bottom: 100px;
+    margin-right: 100px;
+    */
+}
+
+ul#nav-container li {
+	/*padding: 15px;*/
+	padding-right: 15px;
+    width: auto;
+}
+
+ul#nav-container li a {
+	color: #FFF;
+	/*color: Red;*/
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    margin-top: 7px;
+    background: white;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+}
+
+/* End Navigation */
+
+/* Home */
+
+#section-home {
+    background: #000;   /* For first time load the background appears white without this */
+}
+
+#home-container {
+  width: 100%;
+  /*height: 100vh;*/
+  padding:0;
+}
+
+/* End Home */
+
+/* Who are we */
+
+
+.gallery-container{
+    padding-top: 40px;
+    flex: 1 1 100%;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+
+#section-reviews {
+	margin-top: 80px;
+}
+
+.reviews-main p {
+    padding: 20px 50px 20px 50px;
+    color: black;
+}
+
+.reviews-main span {
+    font-size: 18px;
+    color: red;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.customer-list, .services-list {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.services-list {
+	padding-top:50px;
+}
+
+.services-list .item {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width:18%;
+    max-height: 700px;
+    margin-top:40px;
+    margin-bottom: 40px;
+    margin-left:20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    /* -webkit-box-shadow: 10px 10px rgba(0,0,0,0.27); 
+    box-shadow:  10px 10px rgba(0,0,0,0.27);*/
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3e2c7+0,c19e67+100,e9d4b3+100 */
+/*background: rgb(243,226,199); /* Old browsers */
+/*background: -moz-linear-gradient(top, rgba(243,226,199,1) 0%, rgba(193,158,103,1) 100%, rgba(233,212,179,1) 100%); /* FF3.6-15 */
+/*background: -webkit-linear-gradient(top, rgba(243,226,199,1) 0%,rgba(193,158,103,1) 100%,rgba(233,212,179,1) 100%); /* Chrome10-25,Safari5.1-6 */
+/*background: linear-gradient(to bottom, rgba(243,226,199,1) 0%,rgba(193,158,103,1) 100%,rgba(233,212,179,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */
+}
+
+.customer-list .item {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width:25%;
+    max-height: 500px;
+    margin-top:40px;
+    margin-bottom: 40px;
+    margin-left:15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-list .item .service-content {
+    height: 100%;
+    flex: 1 1 60%;
+    display:flex;
+    flex-direction: column;
+}
+
+.services-list .item .service-content .service-photo {
+    height:150px;
+    background-color: black;
+}
+
+.services-list .item .service-content .service-photo.painting {
+    background: url('../images/paint.jpg');
+}
+
+.services-list .item .service-content .service-photo.flooring {
+    background: url('../images/flooring2.jpg');
+}
+
+.services-list .item .service-content .service-photo.kitchenbath {
+    background: url('../images/kitchen&Bath.jpg');
+}
+
+.services-list .item .service-content .service-photo.interior {
+    background: url('../images/6_5.jpg');
+}
+
+.customer-list .item .review-photo {
+    
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 10px 5px 50px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+}
+
+.customer-list .item .review-photo .photo {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.separator{
+    flex: 1 1 5%;
+}
+
+.customer-list .item .review-content {
+    height:150px
+    width: 150px;
+    flex: 1 1 60%;
+    display:flex;
+    flex-direction: column;
+}
+
+.customer-list .item .review-content .header {
+ border-bottom: 1px solid #DcDcDc;
+}
+
+
+
+
+
+.customer-list .item .review-content .header p {
+    margin-top:10px;
+    font-size: 22px;
+}
+
+
+.customer-list .item .review-content h3 {
+    color: red !important;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: normal;
+    padding: 10px 10px 5px 50px !important
+}
+
+
+.customer-list .item .review-content h4, .services-list .item .service-content h4 {
+    color: gray !important;
+    font-weight: bold;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.customer-list .item .review-content h4 {
+	padding: 0px 10px 10px 50px !important
+}
+
+.customer-list .item .review-content img {
+	height: 20px;
+	width: 100px;
+	padding: 0px 10px 0px 50px !important
+}
+
+
+.services-list .item .service-content h4 {
+	padding: 5px 10px 20px 50px !important;
+}
+
+.customer-list .item .review-content p {
+    font-size: 16px ;
+    font-style: italic !important;
+    padding: 10px 50px 20px 50px !important;
+    color: black;
+}
+
+.services-list .item .service-content h3 {
+    color: red !important;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: normal;
+    padding: 30px 5px 5px 20px !important;
+}
+
+.services-list .item .service-content p {
+    font-size: 16px ;
+    font-style: italic !important;
+    padding: 4px 20px 20px 20px !important;
+    color: black;
+}
+
+#contactus-container {
+    height:400px;
+} 
+
+#contactus-container .section-content-container {
+    background-color: #262626;
+    display: flex;
+    flex-direction: row;
+}
+
+#contactus-container .section-content-container .location {
+    flex: 1 1 60%;
+}
+
+#contactus-container .section-content-container .location h3 {
+    color: gray;
+    padding: 30px 20px 30px 50px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#contactus-container .section-content-container .location div {
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 30px;
+}
+
+#contactus-container .section-content-container .contactUs h3 {
+    color: gray;
+    padding: 30px 5px 20px 70px;
+    font-size: 20px;
+}
+
+#contactus-container .section-content-container .location p {
+    padding: 10px 20px 20px 70px;
+}
+
+
+#contactus-container .section-content-container .contactUs {
+ flex: 1 1 40%;   
+}
+
+#contactus-container .section-content-container .contactUs div {
+ padding: 10px 5px 10px 70px;
+ color: gray;
+ font-size: 18px;
+ display: flex;
+ flex-direction: row;
+}
+
+#contactus-container .section-content-container .contactUs div span {
+  margin-left: 10px;
+  align-items: : center;
+  justify-content: center;
+}
+
+#contactus-container .section-content-container .contactUs div img {
+  height: 30px;
+  width: 30px;
+}
+
+/* End Who are we */
+
+/* Projects */
+
+
+/* End Projects */
+
+/* Reviews */
+
+/* End Reviews */
+
+/* Contact us */
+
+/* End Contact us */
+
+/* Common */
+
+article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#section-whoweare, #section-projects, #section-reviews, #section-contact, #section-services {
+    /*margin-top: 50px;*/
+    text-align: center;
+}
+#section-whoweare .section-header, #section-projects .section-header, #section-reviews .section-header, #section-contact .section-header {
+    background-color: black;
+    color: white;
+	position: relative;
+} 
+
+#section-whoweare .section-header:after {
+   content: "";
+   position: absolute;
+   top: 69px;
+   border-top: 20px solid black;
+   border-top-color: inherit; 
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent; 
+   color: black
+}
+
+#section-projects .section-header:after {
+   content: "";
+   position: absolute;
+   top: -3px;
+   border-top: 20px solid black;
+   border-top-color: inherit; 
+   border-left: 20px solid transparent;
+   border-right: 20px solid transparent; 
+   color: white
+}
+
+#whoarewe-container .section-content-container .padded-container {
+	padding: 45px;
+	display: flex;
+	flex-direction: row;
+}
+
+#whoarewe-container .section-content-container .padded-container .left-section {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 35%;
+	align-items: center;
+}
+
+#whoarewe-container .section-content-container .padded-container .right-section {
+	flex: 0 0 65%;
+	height: 100%;
+    padding :10px;
+	text-align: center !important;
+	justify-content: center;
+	align-items : center;
+}
+
+
+
+.section-photo {
+	 background-image: url('../images/Frame_Pic.png');
+	 background-position: top;
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 border-radius : 100%;
+	 width: 300px;
+	 height: 300px;
+	 padding-top: 20px;
+}
+
+#whoarewe-container .section-content-container .padded-container .left-section h2 {
+	 font-size: 20px !important;
+	 font-weight: bolder !important;
+     color: red !important;
+     font-style: normal !important;
+	 text-align: center !important;
+	 padding: 10px !important;
+}
+
+#whoarewe-container .section-content-container .padded-container .left-section p {
+	font-size: 16px;
+	font-weight: normal;
+	color: gray;
+	line-height: 1;
+	text-align: center !important;
+}
+
+.section-text p {
+  font-size: 16px;
+  font-weight: normal;
+  color: gray;
+  line-height: 1.5;
+}
+
+#section-services {
+	padding-top: 80px;
+}
+
+#section-services .section-header-content, #section-reviews .section-header-content { 
+    font-size: 30px;
+    color : #3d3d3d;
+}
+
+#section-title-services, #section-title-reviews {
+    font-weight: 900 !important;
+	height: 70px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+#section-title-services .title, #section-title-reviews .title {
+	height: 60px;
+  }
+
+#section-title-services .underline, #section-title-reviews .underline {
+   border-bottom: 1px solid black;
+   width: 400px;
+}
+
+#section-whoweare h2, #section-projects h2, #section-contact h2 {
+    font-weight:bold;
+    font-size:24px;
+    color: white;
+    padding:20px;
+}
+
+#section-contact {
+	margin-top: 60px;
+}
+
+#whoarewe-container, #projectgallery-container, #reviews-container {
+  width: 100%;
+  z-index: 1;
+  background-color: #B0B1B5;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding:0;
+}
+
+#whoarewe-container, #reviews-container {
+	 margin-top: 20px;
+}
+
+#section-projects {
+	margin-top: 80px;
+}
+
+
+
+#projectgallery-container .section-content-container {
+    background-color: black;
+}
+
+#section-projects h3 {
+    font-size: 16px;
+    width:90%;
+}
+
+#section-projects h2 {
+	padding: 30px 20px 3px 20px;
+}
+
+
+.stripped {
+  padding: 2.25em 1.6875em;
+  background-image: -webkit-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+  background-image: -moz-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+  background-image: -o-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+  background-image: repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+  -webkit-background-size: 4px 4px;
+  -moz-background-size: 4px 4px;
+  background-size: 4px 4px;
+}
+
+.section-content-container {
+    /*height: 100vh;*/
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    background: #FFF;
+    /*
+    border-radius: 18px;
+    background: #f5f6f6;
+    background: -moz-linear-gradient(45deg, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%);
+    background: -webkit-linear-gradient(45deg, #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%);
+    background: linear-gradient(45deg, #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=1 );
+    -webkit-box-shadow: 1px 2px 10px 10px rgba(0,0,0,0.27); 
+    box-shadow: 1px 2px 10px 10px rgba(0,0,0,0.27);*/
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+
+}
+
+/*div#flipGallery > div:hover {
+    opacity: 0.85;
+}*/
+
+/* End Common */
