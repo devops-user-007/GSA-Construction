@@ -102,4 +102,8 @@
 	  flex: 1;
   }
   
+  #section-title-services .title, #section-title-reviews .title {
+	  height: 90px;
+  }
+  
 }
