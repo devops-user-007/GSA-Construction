@@ -138,11 +138,24 @@
 	  height: 90px;
   }
   
-  .bx-wrapper ul li a img{ height: 60px; width: 120px; }
+  /*.bx-wrapper ul li a img{ height: 60px; width: 120px; }*/
+  
+  #section-projects {
+	  display:flex;
+	  flex-direction: column;
+	  padding-top: 80px;
+  }
   
   #section-reviews {
 	  display: flex;
 	  flex-direction: column;
   }
+  
+  #reviews-container {
+	  display:flex;
+	  flex-direction: column;
+  }
+  
+  
 
 }
