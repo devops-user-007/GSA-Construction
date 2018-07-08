@@ -1,0 +1,98 @@
+.navBar {
+  background-color: #000;
+  position: fixed;
+  min-width: 100%;
+  opacity: 0.8;
+}
+
+.logo {
+  background: url('../images/GSA-LOGO-FINAL@3x.png') no-repeat;
+  display: inline-block;
+  height: 80px;
+  width: 140px;
+  background-size: contain;
+  backgound-position: center;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 2%;
+  width: 90%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 50%;
+  margin-right: 2px;
+  font-size: 13px;
+}
+nav ul a {
+  /*color: #e84545;*/
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+nav ul a:hover {
+  color: #e84545;
+}
+nav li {
+  display: inline-block;
+}
+nav #menu-toggle {
+  display: none;
+}
+nav .label-toggle {
+  display: none;
+}
+nav .wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+	
+  .navBar{
+	  opacity: 1;
+  }
+  nav nav ul a {
+    color: #e6e5e6;
+  }
+  nav ul {
+	  background-color: #000;
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: left;
+    transition: all 0.5s ease;
+    width: 100%;
+    visibility: hidden;
+  }
+  nav li {
+	background-color: #000;
+    border-bottom: 2px solid #353434;
+    color: #000;
+    display: block;
+    font-size: 1em;
+    padding: 0.8em 0;
+  }
+  nav #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: 30vh;
+    visibility: visible;
+  }
+  nav .label-toggle {
+    background: linear-gradient(to bottom, #e84545 0%, #e84545 20%, transparent 20%, transparent 40%, #e84545 40%, #e84545 60%, transparent 60%, transparent 80%, #e84545 80%, #e84545 100%);
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 20px;
+    margin-top: 1em;
+    width: 20px;
+  }
+  nav .wrapper {
+    display: block;
+  }
+}

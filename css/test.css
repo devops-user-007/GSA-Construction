@@ -15,7 +15,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    margin: 20px;
     background-color: yellow;
 	 z-index: 9999999;
 	 position: relative;
