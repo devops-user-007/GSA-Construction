@@ -168,19 +168,27 @@ ul#nav-container li a {
 }
 
 .services-list .item .service-content .service-photo.painting {
-    background: url('../images/paint.jpg');
+    background: url('../images/Other/paint.jpg');
+	background-size:contain;
+	background-position: center;
 }
 
 .services-list .item .service-content .service-photo.flooring {
-    background: url('../images/flooring2.jpg');
+    background: url('../images/Other/floor.jpeg');
+	background-size:contain;
+	background-position: center;
 }
 
 .services-list .item .service-content .service-photo.kitchenbath {
-    background: url('../images/kitchen&Bath.jpg');
+    background: url('../images/Other/kitchen.jpg');
+	background-size:contain;
+	background-position: center;
 }
 
 .services-list .item .service-content .service-photo.interior {
-    background: url('../images/6_5.jpg');
+    background: url('../images/Other/interior3.jpeg');
+	background-size:cover;
+	background-position: center;
 }
 
 .customer-list .item .review-photo {

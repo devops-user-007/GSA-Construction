@@ -54,7 +54,18 @@ nav .wrapper {
 @media screen and (max-width: 768px) {
 	
   .navBar{
-	  opacity: 1;
+	  opacity: 0.8;
+	  height: 20%;
+  }
+  
+  .navBar .wrapper {
+	  height: 100%;
+	  padding: 0;
+	  width:100%;
+  }
+  
+  .logo {
+	  margin-left: 0.5em;
   }
   nav nav ul a {
     color: #e6e5e6;
@@ -62,7 +73,6 @@ nav .wrapper {
   nav ul {
 	  background-color: #000;
     display: block;
-    height: 0;
     list-style-type: none;
     opacity: 0;
     text-align: left;
@@ -76,21 +86,21 @@ nav .wrapper {
     color: #000;
     display: block;
     font-size: 1em;
-    padding: 0.8em 0;
+    padding: 0.8em;
   }
   nav #menu-toggle:checked ~ ul {
     opacity: 1;
-    height: 30vh;
     visibility: visible;
   }
   nav .label-toggle {
-    background: linear-gradient(to bottom, #e84545 0%, #e84545 20%, transparent 20%, transparent 40%, #e84545 40%, #e84545 60%, transparent 60%, transparent 80%, #e84545 80%, #e84545 100%);
+    background: linear-gradient(to bottom, #fff 0%, #fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%, #fff 100%);
     cursor: pointer;
     display: block;
     float: right;
     height: 20px;
     margin-top: 1em;
     width: 20px;
+	margin-right: 1em;
   }
   nav .wrapper {
     display: block;
