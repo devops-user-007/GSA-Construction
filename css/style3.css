@@ -51,9 +51,9 @@
     line-height: 120px;
     color: rgba(255,255,255,0.8);
 }
-.cb-slideshow li:nth-child(1) span { background-image: url(../images/main-slider/1.jpg) }
+.cb-slideshow li:nth-child(1) span { background-image: url(../images/main-slider/1.jpeg) }
 .cb-slideshow li:nth-child(2) span {
-    background-image: url(../images/main-slider/2.jpeg);
+    background-image: url(../images/main-slider/2.jpg);
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;

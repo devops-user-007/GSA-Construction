@@ -287,11 +287,12 @@ ul#nav-container li a {
 }
 
 #contactus-container {
-    height:400px;
+	display: flex;
+	flex-direction: column;
 } 
 
 #contactus-container .section-content-container {
-    background-color: #262626;
+    background-color: #000;
     display: flex;
     flex-direction: row;
 }
@@ -301,7 +302,7 @@ ul#nav-container li a {
 }
 
 #contactus-container .section-content-container .location h3 {
-    color: gray;
+    color: lightgray;
     padding: 30px 20px 30px 50px;
     font-size: 20px;
     align-items: center;
@@ -318,7 +319,7 @@ ul#nav-container li a {
 }
 
 #contactus-container .section-content-container .contactUs h3 {
-    color: gray;
+    color: lightgray;
     padding: 30px 5px 20px 70px;
     font-size: 20px;
 }
@@ -329,12 +330,12 @@ ul#nav-container li a {
 
 
 #contactus-container .section-content-container .contactUs {
- flex: 1 1 40%;   
+ flex: 1;   
 }
 
 #contactus-container .section-content-container .contactUs div {
  padding: 10px 5px 10px 70px;
- color: gray;
+ color: lightgray;
  font-size: 18px;
  display: flex;
  flex-direction: row;
