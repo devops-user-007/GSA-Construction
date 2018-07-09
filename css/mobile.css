@@ -156,6 +156,15 @@
 	  flex-direction: column;
   }
   
+  .contact-panel {
+	display: flex !important;
+	flex-direction: column !important;
+	background-color: #000;
+}
+
+#contactus-container .section-content-container .contactUs div {
+	justify-content : left;
+}
   
 
 }

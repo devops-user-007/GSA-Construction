@@ -38,17 +38,17 @@
                     <li><a class="cool-link" id="lnk_contact">GET IN TOUCH</a></li>
                 </ul> -->
 				
-				<nav class="navBar">
+				<nav id="main-navBar" class="navBar">
 				  <nav class="wrapper">
 					<div class="logo"></div><!-- Logo -->
 					<input type="checkbox" id="menu-toggle" />
 					  <label for="menu-toggle" class="label-toggle"></label>
 					<ul>
-					  <li><a href="#">HOME</a></li>
-					  <li><a href="#">WHO ARE WE</a></li>
-					  <li><a href="#">OUR PROJECTS</a></li>
-					  <li><a href="#">CUSTOMER FEEDBACK</a></li>
-					  <li><a href="#">GET IN TOUCH</a></li>
+					  <li><a href="#" id="lnk_home">HOME</a></li>
+					  <li><a href="#" id="lnk_whoarewe">WHO ARE WE</a></li>
+					  <li><a href="#" id="lnk_projectgallery">PROJECT GALLERY</a></li>
+					  <li><a href="#" id="lnk_reviews">CLIENT TESTIMONIAL</a></li>
+					  <li><a href="#" id="lnk_contact">GET IN TOUCH</a></li>
 					</ul>
 				  </nav>
 				</nav>
@@ -206,7 +206,7 @@ Living by the goals of Trust & Transparency, we are ready to meet you and share 
                                         <div class="header"> 
 										<h3> Salil J Deshpande</h3>
                                         <h4> Abbotsford, BC</h4>	
-										<img src="images/3_star.jpg" />
+										<img src="images/5star.png" />
 										</div>
                                         <p>"GSA Construction crew is really awesome.We had contacted them for their Flooring & Painting services and they gave a wonderful new look to your house. Highly satisfactory and timely service. Definitely recommended !!!"</p>
                                     </div>
@@ -216,7 +216,7 @@ Living by the goals of Trust & Transparency, we are ready to meet you and share 
                                         <div class="header"> 
 										<h3> Sukhjit Saroya </h3>
                                         <h4> Squamish, BC</h4>	
-										<img src="images/4_star.jpg" />										
+										<img src="images/5star.png" />										
 										</div>
                                         <p>"Really impressed with the professionlaism and help that GSA construction has provided in renovating our house.Especially loved the way they remodelled our kitchen and basement suit.Thanks for doing a great job.."</p>
                                     </div>
@@ -226,7 +226,7 @@ Living by the goals of Trust & Transparency, we are ready to meet you and share 
                                         <div class="header"> 
 										<h3> Suparn Badwaik</h3>
                                         <h4> Mission, BC</h4>	
-										<img src="images/4_star.jpg" />																				
+										<img src="images/5star.png" />																				
 										</div>
                                         <p>"Our project included installation of new floor, baseboard, lights. We greatly appreciated your suggestions and attention to each and every detail.And helping us in getting the work done within our budget."</p>
                                     </div>
@@ -239,6 +239,9 @@ Living by the goals of Trust & Transparency, we are ready to meet you and share 
             </div>
             
             <div id="section-contact">
+			<div class="section-header">
+                    <h2>GET IN TOUCH WITH US</h2>
+                </div>
                 <div id="contactus-container">
                     <div class="section-content-container" data-aos="fade-up" data-aos-duration="3000">
                         <!-- <div class="location">
@@ -248,16 +251,20 @@ Living by the goals of Trust & Transparency, we are ready to meet you and share 
                         </div> -->
 
                         <div class="contactUs">
-                            <h3> Contact Us</h3>
-                            <div>
-                               <img src="images/phone.png" /><span>778-456-7894</span>
-                            </div>
-                            <div>
-                               <img src="images/mail.png" /><span>avtar.minhas@gsaconstruction.ca</span>
-                            </div>
-                            <div>
-                               <img src="images/facebook.png" /><span>Like us on facebook</span>
-                            </div>
+							<div class="contact-panel">
+								<div>
+								   <img src="images/phone.png" /><span>778-456-7894</span>
+								</div>
+								<div>
+								   <img style="width:35px" src="images/mail.png" /><span>minhas.sa@gmail.com</span>
+								</div>
+								<div>
+								   <img style="height:35px" src="images/facebook.png" /><span>Like us on facebook</span>
+								</div>
+								<div>
+								   <img style="width:35px" src="images/instagram.png" /><span>Follow us on Instagram</span>
+								</div>
+							</div>
                         </div>    
                     </div>
                     </div>
@@ -296,7 +303,7 @@ Living by the goals of Trust & Transparency, we are ready to meet you and share 
     <script src="js/third-party/flip-gallery/flipgallery.min.js"></script>-->
 
         </article>
-        <footer>
+        <footer style="display: none">
             @copyrights
         </footer>
     </body>

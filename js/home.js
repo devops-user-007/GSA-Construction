@@ -7,25 +7,25 @@ $(document).ready(function() {
 
                         $("#lnk_whoarewe").click(function(){
                             $('html, body').animate({
-                                scrollTop: $("#section-whoweare").offset().top
+                                scrollTop: $("#section-whoweare").offset().top - $('#main-navBar').height()
                             }, 2000);
                         });
 
                         $("#lnk_projectgallery").click(function(){
                             $('html, body').animate({
-                                scrollTop: $("#section-projects").offset().top
+                                scrollTop: $("#section-projects").offset().top - $('#main-navBar').height()
                             }, 2000);
                         });
 
                         $("#lnk_reviews").click(function(){
                             $('html, body').animate({
-                                scrollTop: $("#section-reviews").offset().top
+                                scrollTop: $("#section-reviews").offset().top - $('#main-navBar').height()
                             }, 2000);
                         });
 
                         $("#lnk_contact").click(function(){
                             $('html, body').animate({
-                                scrollTop: $("#contactus-container").offset().top
+                                scrollTop: $("#contactus-container").offset().top - $('#main-navBar').height()
                             }, 2000);
                         });
 
